@@ -1,0 +1,107 @@
+@media screen and (max-width:768px){
+    .homebanner{
+        height: 350px;
+    }
+    .banner-bag img{
+        height: 350px;
+    }
+    .case-nav {
+        width: 100%;
+        left: 0;
+        margin-left:0; 
+    }
+    .case-nav .navlogo{
+      width:300px;
+      height: 80px;
+    }
+    .case-nav .navlist{
+        display: none;
+    }
+    .homecase .caseList .caseList-low{
+       width: 100%;
+    }
+    .serverList{
+        width:90%;
+
+    }
+    .serverList li{
+        width: 50%;
+        margin-top: 30px;
+    }
+    .serverList li:nth-of-type(2), .serverList li:nth-of-type(3), .serverList li:nth-of-type(4), .serverList li:nth-of-type(5), .serverList li:nth-of-type(7), .serverList li:nth-of-type(8), .serverList li:nth-of-type(9), .serverList li:nth-of-type(10){
+    margin-left:0%; 
+}
+.blue-logo {
+    width: 120px;
+    height: 40px;
+    background: url('../img/矢量智能对象.png');
+    background-position: center center;
+    background-size: 100% 100%;
+    float: left;
+}
+.caseList-nav{
+    border:none;
+    height: 300px;
+}
+.banner-img-list{
+    height: 300px;
+    display: block;
+}
+.banner-img-list .banner-bag{
+    height: 100%;
+}
+.banner-img-list .banner-bag img{
+    height: 100%;
+}
+.banner-img-list .banner-bag .swiper-container2{
+    height: 100%;
+}
+.contentTitle{
+    display: none;
+}
+.listContent{
+    display: none;
+}
+.contentTitle{
+    display: none;
+}
+.caseListContent{
+    width:100%;
+}
+.content-wap{
+    width: 80%;
+    height: 170px;
+    margin: 0 auto;
+    background: white;
+    padding-top:20px;
+    overflow: hidden;
+    display: block;
+}
+.content-wap p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.content-wap span{
+    font-size: 1.6rem;
+    color:#6A6D73;
+}
+
+.showDur {
+    width: 100%;
+    height: 50px;
+    line-height: 60px;
+    font-size: 16px;
+    color: #6AD2F1;
+    text-align: center;
+    background: white;
+}
+.content-caseTitle{
+    display: block;
+}
+.caseListContent .wapcaseList{    
+    margin-top:0px; 
+}
+.casenav-wap{
+    display: block;
+}
+}

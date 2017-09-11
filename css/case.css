@@ -1,0 +1,287 @@
+.homebanner{
+    height: 450px;
+    position: relative;
+}
+.banner-bag{
+    background-size:100%; 
+    background-position: inherit;
+    height: 450px;
+    overflow: hidden;
+}
+.case-nav{
+    width: 70%;
+    height:40px;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    margin-left: -35%;
+    bottom:20px;
+
+}
+.case-nav .navlogo{
+    width: 220px;
+    height: 70px;
+    background: url('../img/案例_03.png');
+    background-position:center  center;
+    background-size:100% 100%;   
+    float: left;
+    margin-top:-50px;
+    opacity: 0.5;
+}
+.case-nav .navlist{
+    width:370px;
+}
+.case-nav .navlist li{
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #999999;
+}
+.case-nav .navlist li:hover{
+    border-bottom: 1px solid #6AD2F1;
+}
+.homecase{
+    margin-bottom: 10px;
+}
+.caseList .caseList-low{
+    transition: all .6s;
+    position: relative;
+}
+.caseList .caseList-low:hover .caseList-low-write{
+    display: none;
+}
+.caseList .caseList-low:hover{
+    z-index: 99;
+   box-shadow:-10px 0 10px #ccc, /*左边阴影*/  
+    10px 0 10px #ccc, /*右边阴影*/  
+    0 -10px 10px #ccc, /*顶部阴影*/  
+    0 10px 10px #ccc; /*底边阴影*/  
+}
+.big{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    background: url('../img/l-f.png');
+    background-position:center  center;
+    background-size:100% 100%;   
+    margin-top:30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.caseList .caseList-low:hover .big{
+    display: block;
+}
+.server{
+    width: 100%;
+    height: auto;
+    padding-bottom:100px; 
+}
+.serverList{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.serverList li{
+    width: 12%;
+    height: auto;
+    float: left;
+    margin-top:150px;
+}
+.serverList-img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: url('../img/服务_03.jpg');
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.serverList li p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.serverList li:nth-of-type(2), .serverList li:nth-of-type(3), .serverList li:nth-of-type(4), .serverList li:nth-of-type(5), .serverList li:nth-of-type(7), .serverList li:nth-of-type(8), .serverList li:nth-of-type(9), .serverList li:nth-of-type(10){
+    margin-left:10%; 
+}
+.case-nav .serverlogo{
+    background: url('../img/889226913376087142.png');
+    width: 220px;
+    height: 70px;
+    background-position: center center;
+    background-size: 100% 100%;
+    float: left;
+    margin-top: -50px;
+    opacity: 0.5;
+}
+.caseList-nav{
+    width: 100%;
+    height: 80px;
+    border-bottom: 3px solid #ccc;
+}
+.caseList-nav .banner-nav .navlogo{
+    width: 120px;
+    height: 100%;
+    background: url('../img/blue-logo.png');
+    background-position: center center;
+    background-size: 100% 100%;
+    float: left;
+}
+.caseList-nav .banner-nav .navlist ul li{
+    font-size: 16px;
+}
+.caseList-nav .banner-nav .navlist ul li:hover{
+    color: #000;
+    font-weight: bold;
+}
+.caseListContent{
+    width: 70%;
+    margin: 0 auto;
+    height: auto ;
+
+}
+.contentTitle{
+    width: 100%;
+    height: 50px;
+    margin-top:50px;
+    border-bottom: 1px solid #000;
+    line-height: 50px;
+    text-indent: 10px;
+    font-size: 14px;
+    letter-spacing: .1rem;
+     
+}
+.homes{
+    width: 15px;
+    height: 15px;
+    background:url('../img/Shape 19.png');
+    background-size:100%; 
+    float: left;
+    margin-top:17.5px;
+}
+.listContent{
+    width: 100%;
+    height: auto;
+    margin-top:20px;
+    overflow: hidden;
+
+}
+.listContent-left{
+    width: 65%;
+    height: auto;
+    float: left;
+}
+
+.swiper-slide img{
+   width: 100%;
+   display: block;
+}
+.swiper-pagination span{
+    width: 15px;
+    height: 15px;
+}
+.swiper-pagination-bullet{
+    opacity: 0.3;
+}
+.swiper-pagination-bullet-active{
+    background: white;
+    opacity: 1;
+}
+.listContent-right{
+    width: 30%;
+    height: auto;
+    float: left;
+    padding: 20px;
+}
+.listContent-right p:nth-of-type(1){
+    color: #393939;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom:10px;   
+}
+.listContent-right span{
+    color: #7C7C7C;
+    font-size: 14px;
+}
+.listContent-right p:nth-of-type(2){
+    font-size: 18px;
+     color: #393939;
+      font-weight: bold;
+    padding-bottom:10px;   
+    margin-top: 30px; 
+}
+.caseListContent .caseList{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.casenav-wap{
+    width: 100%;
+    height: 50px;
+    background: white;
+    margin-bottom:20px;
+}
+.casenav-wap ul{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.casenav-wap ul li{
+    width: 19%;
+    height: auto;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    color: #6A6D73;
+    font-size: 1.6rem;
+}
+.casenav-wap ul li:nth-of-type(2){
+    margin-left: 8%;
+}
+.casenav-wap ul li:nth-of-type(3){
+    margin-left: 8%;
+}
+.casenav-wap ul li:nth-of-type(4){
+    margin-left: 8%;
+}
+.casenow{
+    font-weight: bold;
+    color: #393939;
+    border-bottom: 3px solid #6AD2F1;
+}
+.blue-logo {
+    width: 120px;
+    height: 40px;
+    background: url(../img/blue-logo.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    float: left;
+}
+.banner-img-list{
+    display: none;
+}
+.showDur{
+    display: none;
+}
+.content-wap{
+    display: none;
+}
+.content-caseTitle{
+    width: 100%;
+    height: 50px;
+    background: #F8F8F8;
+    line-height: 50px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-indent: 2rem;
+    display: none;
+}
+.casenav-wap{
+    display: none;
+}

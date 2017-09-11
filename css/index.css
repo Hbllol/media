@@ -1,0 +1,300 @@
+
+*{margin: 0;padding: 0;list-style: none;font-family: '微软雅黑';text-decoration: none;}
+.homebanner{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.banner-img{
+    width: 100%;
+    height: 900px;;
+    position: relative;
+}
+.banner-bag{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:0;
+}
+.navbar-default {
+    background: none;
+    border: none;
+    width: 70%;
+    left: 50%;
+    margin-left: -35%;
+    position: absolute;
+    top: 20px;
+    z-index: 999;
+}
+.swiper-slide img{
+    width: 100%;
+    display: block;
+}
+.banner-title{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    z-index: 999;
+}
+.banner-nav{
+    width: 70%;
+    height:40px;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    margin-left: -35%;
+    top:20px;
+}
+.container-fluid {
+    width: 100%;
+    height: 50px;
+}
+.navbar-collapse{
+    width: 100%;
+    height: 50px;
+}
+.navlogo{
+    width: 120px;
+    height: 40px;
+    background: url('../img/矢量智能对象.png');
+    background-position:center  center;
+    background-size:100% 100%;   
+    float: left;
+    position: absolute;
+    top: 5px;
+}
+.navlist{
+    float: right;
+    width: 400px;
+    height: 100%;
+}
+ .navbar-collapse{
+     border:none;
+ }
+.navbar-collapse  ul {
+    height: 100%;
+    right: 0;
+}
+.navbar-collapse ul li{
+    width:60px;
+    height:100%;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    margin-left:30px;
+    font-size:14px;
+    color: #999999;
+}
+.navbar-collapse  ul li:hover{
+    color: white;
+    border-bottom:1px solid #64B5CD;
+}
+.banner-title h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+.bigs{
+    margin-top:180px;    
+}
+.banner-title .little{
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    word-wrap:break-word;
+    margin-top:30px;
+    color: #999999;
+    font-size: 14px;
+    height: auto;
+}
+.bannerbutton {
+    width: 150px;
+    height: 40px;
+    background: #6AD2F1;
+    margin:0 auto;
+    text-align: center;
+    line-height: 40px;
+    color: white; 
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top:30px;    
+}
+.homeList{
+    width: 100%;
+    height: auto;
+    padding-top:100px; 
+    border-bottom: 1px solid #EDEDED;
+}
+.homeList ul{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.homeList ul li{
+    float: left;
+    width: 20%;
+    height: 200px;
+    margin-top:30px;
+}
+.homeList-1{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background: url('../img/30-1.png');
+    background-position:center  center;
+    background-size:100% 100%;   
+}
+.homeList-2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #E1E1E1;
+    margin-top:30px;
+}
+.homeList-3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:-33px;
+    color: #000;
+}
+.homeList-4{
+    margin-top:15px;
+}
+.homeList-4, .homeList-5{
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}
+.homeList ul li:nth-of-type(2){
+    margin-left:20%;
+}
+.homeList ul li:nth-of-type(3){
+    margin-left:20%;
+}
+.homeList ul li:nth-of-type(5){
+    margin-left:20%;
+}
+.homeList ul li:nth-of-type(6){
+    margin-left:20%;
+}
+.homecase{
+    width: 100%;
+    height: auto;
+}
+.case-img{
+    width: 100%;
+    height: auto;
+}
+.case-img img{
+    width: 100%;
+    display: block;
+}
+.caseList{
+    width: 100%;
+    overflow: hidden;
+}
+.caseList .caseList-low{
+   width:16.666%;
+   height: auto;
+   float: left;
+   position: relative;
+   overflow: hidden;
+}
+.caseList .caseList-low img{
+   width: 100%;
+   display: block;
+}
+.caseList-low-write{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #75D4F0;
+    opacity: 0.8;
+    display: none;
+    
+    
+}
+.caseList-low-write p{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 35%;
+    font-size: 14px;
+    color: white;
+}
+.caseList-low-write .big{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background: url('../img/big.png');
+    background-position:center  center;
+    background-size:100% 100%;   
+    margin-top:30px;
+}
+.caseList .caseList-low:hover .caseList-low-write{
+    display: block;
+}
+/*.caseList-low:hover .caseimgs{s
+    width: 20px;
+    height: 20px;
+}*/
+.homepanner{
+    width: 100%;
+    height: auto;
+    padding-bottom:30px; 
+
+}
+.pannerList{
+    width: 70%;
+    height: 100%;
+    padding-top:30px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+.pannerList li{
+    width: 13%;
+    height: auto;
+    float: left;
+}
+.pannerList li img{
+    width: 100%;
+    display: block;
+}
+.pannerList li:nth-of-type(2){
+    margin-left:4.4%;
+}
+.pannerList li:nth-of-type(3){
+    margin-left:4.4%;
+}
+.pannerList li:nth-of-type(4){
+    margin-left:4.4%;
+}
+.pannerList li:nth-of-type(5){
+    margin-left:4.4%;
+}
+.pannerList li:nth-of-type(6){
+    margin-left:4.4%;
+}
+.pannerList li:nth-of-type(8){
+    margin-left:4.4%;
+}
+.pannerList li:nth-of-type(9){
+    margin-left:4.4%;
+}
+.pannerList li:nth-of-type(10){
+    margin-left:4.4%;
+}
+.pannerList li:nth-of-type(11){
+    margin-left:4.4%;
+}
+.pannerList li:nth-of-type(12){
+    margin-left:4.4%;
+}
+ .case-img .caseimgs2{
+        display: none;
+}
+  

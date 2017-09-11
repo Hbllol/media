@@ -1,0 +1,118 @@
+.broadside{
+    width: 30px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: black;
+    z-index: 999;
+    opacity: 0.8;
+}
+.broadsidetell{
+    width: 100%;
+    height: 400px;
+    margin-top:250px;
+   
+}
+.telllear{
+    width: 80%;
+    height: 1px;
+    margin: 0 auto;
+    background: #999;;
+    margin-top:20px;     
+}
+.broadsidetell p{
+    text-align: center;
+     color: white;
+     font-size: 14px;
+}
+.broadsidetell .tell1{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    z-index: 12;
+    cursor: pointer;
+}
+.broadsidetell .tell2{
+    width: 100%;
+    height: 30%;
+    margin-top:20px; 
+    position: relative;
+    z-index: 999;    
+    cursor: pointer;    
+}
+.tell1-img{
+   width:30px;
+   height: 30px;
+   background: url('../img/Phone On.png');
+   background-size:70%;
+   background-position:center  center;
+   background-repeat:no-repeat; 
+}
+.tell2-img{
+   width:30px;
+   height: 30px;
+   background: url('../img/Man.png');
+   background-size:70%;
+   background-position:center  center;
+   background-repeat:no-repeat; 
+}
+.tell1 p{
+    height: 10px;
+}
+.tell2 p{
+    height: 10px;
+}
+.tell1:hover{
+    background:#75D4F0 ;
+    background-position:center  center;
+    background-size:100%;   
+}
+.tell2:hover{
+    background:#75D4F0 ;
+    background-position:center  center;
+    background-size:100%;   
+}
+.tell1:hover .box1{
+    left:-289px;
+    z-index: 10;
+}
+.tell2:hover .box2{
+    left:-390px;
+    z-index: 10;
+}
+
+
+.scrollTop{
+   width:30px;
+   height: 30px;
+   background: url('../img/首页_03.jpg');
+   background-size:80%;
+   border-radius: 10px;
+   background-position:center  center;
+   background-repeat:no-repeat; 
+   cursor: pointer;
+   position: absolute;
+   margin-top: 100px;
+}
+.sidebox{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    z-index: 10;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    
+}
+.box1{
+    width: 300px;
+    height:200px;
+}
+.box2{
+    width: 400px;
+    height:300px;
+}
+.sidebox img{
+    width: 100%;
+    display: block;
+}
