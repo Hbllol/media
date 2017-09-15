@@ -21,12 +21,18 @@
 .case-nav .navlogo{
     width: 220px;
     height: 70px;
-    background: url('../img/案例_03.png');
+    background: url('../img/Gallery-拷贝.png');
     background-position:center  center;
     background-size:100% 100%;   
     float: left;
     margin-top:-50px;
-    opacity: 0.5;
+}
+.case-nav .navlogo-server{
+    background: url('../img/服务.png');
+    background-position:center  center;
+    background-size:100% 100%;   
+    float: left;
+    margin-top:-50px;
 }
 .case-nav .navlist{
     width:370px;
@@ -108,7 +114,7 @@
     font-weight: bold;
     margin-top: 20px;
 }
-.serverList li:nth-of-type(2), .serverList li:nth-of-type(3), .serverList li:nth-of-type(4), .serverList li:nth-of-type(5), .serverList li:nth-of-type(7), .serverList li:nth-of-type(8), .serverList li:nth-of-type(9), .serverList li:nth-of-type(10){
+.serverList li:nth-of-type(2), .serverList li:nth-of-type(3), .serverList li:nth-of-type(4), .serverList li:nth-of-type(5), .serverList li:nth-of-type(7), .serverList li:nth-of-type(8), .serverList li:nth-of-type(9), .serverList li:nth-of-type(10), .serverList li:nth-of-type(12), .serverList li:nth-of-type(13), .serverList li:nth-of-type(14), .serverList li:nth-of-type(15){
     margin-left:10%; 
 }
 .case-nav .serverlogo{
@@ -173,6 +179,9 @@
     overflow: hidden;
 
 }
+#navlist{
+    cursor: pointer;
+}
 .listContent-left{
     width: 65%;
     height: auto;
@@ -199,6 +208,10 @@
     height: auto;
     float: left;
     padding: 20px;
+}
+.listContent-right strong{
+    font-size: 20px;
+    padding: 20px 0;
 }
 .listContent-right p:nth-of-type(1){
     color: #393939;
@@ -240,6 +253,10 @@
     line-height: 50px;
     color: #6A6D73;
     font-size: 1.6rem;
+    cursor: pointer;
+}
+.caseNow{
+    border-bottom:1px solid #64B5CD;
 }
 .casenav-wap ul li:nth-of-type(2){
     margin-left: 8%;
@@ -284,4 +301,12 @@
 }
 .casenav-wap{
     display: none;
+}
+#wapteam{
+    display: none;
+}
+#listNav li:hover{
+    color: #393939;
+    font-weight: bold;
+    border: none;
 }

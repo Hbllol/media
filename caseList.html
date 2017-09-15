@@ -15,6 +15,12 @@
     <link rel="stylesheet" type="" href="css/media3.css">                       
     <title>Document</title>
 </head>
+<style>
+    #swiper-wap img{
+       width: 100%;
+       height: 100%;
+    }
+</style>
 <body>
      <div class="broadside">
         <div class="broadsidetell">
@@ -35,14 +41,25 @@
                 <p>销</p>
                 <p>顾</p>
                 <p>问</p>   
-                <div class="sidebox box2">
-                    <img src="img/侧边栏 拷贝.png" alt="">
-                </div>                                          
+                  <div class="sidebox box2" >
+                     <div class="box2-title"><i>请选择您需要咨询的业务</i></div>
+                    <ul id='boxCode'>
+                        <!--<li>
+                            <p><i>asdasd</i></p>
+                            <p><i>asdasd</i></p> 
+                            <div class="codeimg"></div> 
+                            <div class="codetell">
+                               <div class="codetellicon"></div>
+                               <i></i>    
+                            </div>                          
+                        </li>-->
+                    </ul>
+                </div>                                        
             </div>            
         </div>
         <div id='scrollTop' class="scrollTop"></div>
     </div>
-    <div class="caseList-nav">
+    <div class="caseList-nav" style='overflow: hidden;'>
         <nav class="navbar navbar-default"> 
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -57,7 +74,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right" id="listNav">
                                 <a href="index.html"><li>首页</li></a>
                                 <a href="case.html"><li>案例</li></a>
                                 <a href="server.html"><li>服务</li></a>
@@ -69,15 +86,8 @@
         <div class="banner-img banner-img-list">
             <div class="banner-bag">
               <div class="swiper-container2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                           <img src="img/首页_01.jpg" alt="">  
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/首页-恢复的_01.jpg" alt="">
-                        </div>
-                       
-                                        
+                    <div id='swiper-wap' class="swiper-wrapper">
+                        
                     </div>
                    
                 </div>    
@@ -91,12 +101,12 @@
         <div class="listContent">
             <div class="listContent-left">
                  <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                    <div id="caselist-pc" class="swiper-wrapper">
+                        <!--<div class="swiper-slide">
                            <img src="img/案例-详情_03.jpg" alt="">  
                         </div>
                         <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 3</div>-->
                                         
                     </div>
                     <div class="swiper-pagination"></div>
@@ -118,9 +128,7 @@
             最近案例
         </div>
         <div class="content-wap">
-            <p>红星美凯龙五一诚信推广</p>
-            <span>为促进阿斯顿飒飒飒飒飒飒飒飒飒飒飒飒飒飒飒飒啊撒大苏打撒了点nsa来的卡萨丁为促进阿斯顿飒飒飒飒飒飒飒飒飒飒飒飒飒飒飒飒啊撒大苏打撒了点nsa来的卡萨丁为促进阿斯顿飒飒飒飒飒飒飒飒飒飒飒飒飒飒飒飒啊撒大苏打撒了点nsa来的卡萨丁为促进阿斯顿飒飒飒飒飒飒飒飒飒飒飒飒飒飒飒飒啊撒大苏打撒了点nsa来的卡萨丁</span>
-            
+            <span></span>
         </div>
         <div class="showDur">
                 <span class='dur'>查看全部</span>
@@ -130,7 +138,7 @@
             最近案例
         </div>
         <div class="caseList wapcaseList">
-            <div class="caseList-low">
+            <!--<div class="caseList-low">
                 <img src="img/c_04.jpg" alt="">
                 <div class="caseList-low-write">
                     <p>擦啊擦拭的阿斯打扫打扫的啊是否骚妇大宋打算</p>
@@ -171,7 +179,7 @@
                     <p>擦啊擦拭的阿斯打扫打扫的啊是否骚妇大宋打算</p>
                     <div class="big"></div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
      <div class="homefooter">
@@ -190,11 +198,12 @@
                 <div class="homefooter-low2">
                     <p>友情链接 F  <a>RIENDSHIP LINK</a></P>
                      <ul class="footeremp">
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>                         
+                        <li><a href="http://www.shdsjt.cn">东朔集团</a></li>
+                         <li><a href="http://m2.shdsjt.cn">东朔平方</a></li>
+                         <li><a href="">东朔企服</a></li>
+                         <li><a href="">东朔易淼</a></li>
+                         <li><a href="">东朔金融</a></li>
+                         <li><a href="">东朔法务</a></li>                                      
                      </ul>
                 </div>   
             </div>    
@@ -209,6 +218,7 @@
 <script src="js/scroll.js"></script> 
 <script src="js/swiper-3.4.2.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+<script src='js/api.js'></script>
 <script>
     var appendNumber = 10;
     var prependNumber = 1;
@@ -235,7 +245,7 @@
         crossFade: false,
         }
     });
-            var flg = false;            
+    var flg = false;            
     $('.showDur').click(function(){
         if(flg==false){
           flg = true;
@@ -247,5 +257,80 @@
             $('.dur').html('查看全部');
         }
       
+    })
+    
+    //案例详情
+    function caseList (){
+        var location = window.location.href;
+        var galleryIds = location.split('?')[1];
+        // console.log(galleryId)
+        console.log(localStorage.getItem('ID'))
+        $.ajax({
+            url: api+GalleryDetail,
+            type: 'get',
+            data:{galleryId:galleryIds},
+            success: function(data){
+            console.log(data)
+            var PicList = data.Data.PicList;
+            $.each(PicList,function(index){
+                var html = 
+                '<div class="swiper-slide">'+
+                   '<img src="'+PicList[index]+'" alt="">'+ 
+                '</div>'
+                $('#caselist-pc').append(html)
+                var html2 = 
+                 '<div class="swiper-slide">'+
+                    '<img src="'+PicList[index]+'" alt="">'+  
+                 '</div>'
+                 $('#swiper-wap').append(html2)
+            })
+            $('.listContent-right').html(data.Data.galleryDetail)
+            $('.content-wap span').html(data.Data.galleryDetail)
+            }               
+        })  
+    }
+     caseList ()
+//最近案例
+     $.ajax({
+            url: api+GallerytList,
+            type: 'get',
+            data:{type:0,pageSize:6},
+            success: function(data){
+            // console.log(data)
+            var GalleryList = data.Data.GalleryList;
+            $.each(GalleryList,function(index){
+                var html = 
+                '<a href="caseList.html?'+GalleryList[index].GalleryId+'">'+
+                '<div class="caseList-low">'+
+                    '<img src="'+GalleryList[index].GalleryIcon+'" alt="">'+                
+                    '<div class="big"></div>'+
+                '</div>'+
+                '</a>'
+                $('.caseList').append(html)
+            })
+            }               
+        })  
+     //营销顾问列表-首页-右侧展开二维码
+     $.ajax({
+        url: api+ConsultantList,
+        type: 'get',
+        success: function(data){
+        //    console.log(data)
+           var codeList = data.Data.ConsultantList
+           $.each(codeList,function(index){
+               console.log(codeList[index].ConsultantType)
+               var html = 
+                '<li>'+
+                    '<p><i>'+codeList[index].ConsultantType+'</i></p>'+
+                    '<p><i>'+codeList[index].ConsultantName+'</i></p>'+
+                    '<div class="codeimg"><img src="'+codeList[index].Pic+'"></div>'+ 
+                    '<div class="codetell">'+
+                        '<div class="codetellicon"></div>'+
+                         codeList[index].ConsultantPhone+   
+                    '</div>'+                          
+                '</li>'
+                $('#boxCode').append(html)
+           })
+        }
     })
  </script>

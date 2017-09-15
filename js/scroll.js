@@ -12,3 +12,14 @@
         } 
        });
     })
+
+    var windowHeight = $(window).height();
+    console.log(windowHeight);
+    $('.broadside').css('height',windowHeight);
+    $('.broadsidetell').css({
+      'position':'absolute',
+      'top':'50%',
+      'margin-top':'-200px'
+    })
+    $('.scrollTop').css('bottom','50px')
+    $('.banner-img').css('height',$('.banner-bag').height()+50)

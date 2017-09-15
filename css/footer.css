@@ -44,7 +44,7 @@
     text-decoration: none;
 }
 .homefooter-low2 .footertell{
-    width: 50%;
+    width: 40%;
     float: left;
     height: 20px;
     color: white;
@@ -79,6 +79,7 @@
     margin-top:70px;
     line-height: 30px;
     text-indent: 10px;
+    letter-spacing: 1.5px;
 }
 .road div{
     float: left;
@@ -109,6 +110,9 @@
 .footeremp li:nth-of-type(5){
     margin-top:25px;
 }
+.footeremp li:nth-of-type(6){
+    margin-top:25px;
+}
 .footer2{
     width: 100%;
     height: 50px;
@@ -117,4 +121,8 @@
     background: white;
     line-height: 50px;
     color: #929398;
+}
+.footeremp li a{
+    color:white;
+    text-decoration: none;
 }

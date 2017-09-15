@@ -37,8 +37,19 @@
                 <p>销</p>
                 <p>顾</p>
                 <p>问</p>   
-                <div class="sidebox box2">
-                    <img src="img/侧边栏 拷贝.png" alt="">
+                 <div class="sidebox box2" >
+                     <div class="box2-title"><i>请选择您需要咨询的业务</i></div>
+                    <ul id='boxCode'>
+                        <!--<li>
+                            <p><i>asdasd</i></p>
+                            <p><i>asdasd</i></p> 
+                            <div class="codeimg"></div> 
+                            <div class="codetell">
+                               <div class="codetellicon"></div>
+                               <i></i>    
+                            </div>                          
+                        </li>-->
+                    </ul>
                 </div>                                          
             </div>            
         </div>
@@ -70,12 +81,12 @@
         </nav>
         <div class="case-nav">
             <div class="navlogo"></div>
-             <div class="navlist">
+             <div id='navlist' class="navlist">
                  <ul>
-                     <li>首页</li>
-                     <li>案例</li>
-                     <li>服务</li>
-                     <li>关于</li>
+                     <li class="caseNow">全部</li>
+                     <li>平面</li>
+                     <li>视频</li>
+                     <li>新媒体</li>
                  </ul>
              </div>
         </div>
@@ -107,7 +118,7 @@
    </div>
     <div class="homecase">
         <div class="caseList">
-            <div class="caseList-low">
+            <!--<div class="caseList-low">
                 <img src="img/c_04.jpg" alt="">
                 
                     <div class="big"></div>
@@ -187,7 +198,7 @@
                     <p>擦啊擦拭的阿斯打扫打扫的啊是否骚妇大宋打算</p>
                     <div class="big"></div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
     
@@ -207,11 +218,12 @@
                 <div class="homefooter-low2">
                     <p>友情链接 F  <a>RIENDSHIP LINK</a></P>
                      <ul class="footeremp">
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>                         
+                         <li><a href="http://www.shdsjt.cn">东朔集团</a></li>
+                         <li><a href="http://m2.shdsjt.cn">东朔平方</a></li>
+                         <li><a href="">东朔企服</a></li>
+                         <li><a href="">东朔易淼</a></li>
+                         <li><a href="">东朔金融</a></li>
+                         <li><a href="">东朔法务</a></li>                                        
                      </ul>
                 </div>   
             </div>    
@@ -226,6 +238,7 @@
 <script src="js/scroll.js"></script> 
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 <script src="js/swiper-3.4.2.min.js"></script>  
+<script src="js/api.js"></script>
  <script>
 
     var appendNumber = 10;
@@ -243,4 +256,65 @@
         crossFade: false,
         }
     });
+    //案例列表
+    function GalleryList(type){
+        $('.caseList').html('')
+        $.ajax({
+            url: api+GallerytList,
+            type: 'get',
+            data:{type:type,pageSize:100},
+            success: function(data){
+            console.log(data)
+            var GalleryList = data.Data.GalleryList;
+            $.each(GalleryList,function(index){
+                localStorage.setItem('ID',GalleryList[index].GalleryId)
+                var html = 
+                '<a href="caseList.html?'+GalleryList[index].GalleryId+'">'+
+                '<div class="caseList-low">'+
+                    '<img src="'+GalleryList[index].GalleryIcon+'" alt="">'+                
+                    '<div class="big"></div>'+
+                '</div>'+
+                '</a>'
+                $('.caseList').append(html)
+            })
+            }               
+        })  
+      }
+      GalleryList(0)
+      var typeArr = ['0','290','291','292'];
+      $('.casenav-wap ul li').each(function(i){
+          $('.casenav-wap ul li').eq(i).click(function(){
+               GalleryList(typeArr[i])
+               $('.casenav-wap ul li').eq(i).addClass('casenow').siblings().removeClass('casenow');
+          })
+      })
+       $('#navlist ul li').each(function(i){
+          $('#navlist ul li').eq(i).click(function(){
+               GalleryList(typeArr[i])
+               $('#navlist ul li').eq(i).addClass('caseNow').siblings().removeClass('caseNow');
+          })
+      })
+      //营销顾问列表-首页-右侧展开二维码
+     $.ajax({
+        url: api+ConsultantList,
+        type: 'get',
+        success: function(data){
+           console.log(data)
+           var codeList = data.Data.ConsultantList
+           $.each(codeList,function(index){
+               console.log(codeList[index].ConsultantType)
+               var html = 
+                '<li>'+
+                    '<p><i>'+codeList[index].ConsultantType+'</i></p>'+
+                    '<p><i>'+codeList[index].ConsultantName+'</i></p>'+
+                    '<div class="codeimg"><img src="'+codeList[index].Pic+'"></div>'+ 
+                    '<div class="codetell">'+
+                        '<div class="codetellicon"></div>'+
+                         codeList[index].ConsultantPhone+   
+                    '</div>'+                          
+                '</li>'
+                $('#boxCode').append(html)
+           })
+        }
+    })
  </script>

@@ -7,7 +7,7 @@
 }
 .banner-img{
     width: 100%;
-    height: 900px;;
+    height: auto;
     position: relative;
 }
 .banner-bag{
@@ -77,7 +77,7 @@
     right: 0;
 }
 .navbar-collapse ul li{
-    width:60px;
+    width:55px;
     height:100%;
     text-align: center;
     line-height: 40px;
@@ -99,7 +99,7 @@
     margin-top:180px;    
 }
 .banner-title .little{
-    width: 40%;
+    width: 50%;
     height: auto;
     margin: 0 auto;
     word-wrap:break-word;
@@ -123,7 +123,7 @@
 .homeList{
     width: 100%;
     height: auto;
-    padding-top:100px; 
+    padding-top:30px; 
     border-bottom: 1px solid #EDEDED;
 }
 .homeList ul{
@@ -136,7 +136,7 @@
 .homeList ul li{
     float: left;
     width: 20%;
-    height: 200px;
+    height: 230px;
     margin-top:30px;
 }
 .homeList-1{
@@ -161,13 +161,14 @@
     margin-top:-33px;
     color: #000;
 }
+
 .homeList-4{
-    margin-top:15px;
-}
-.homeList-4, .homeList-5{
+    margin-top:15px;    
     text-align: center;
     font-size: 14px;
     color: #000;
+    padding: 0 40px;
+    line-height: 30px;
 }
 .homeList ul li:nth-of-type(2){
     margin-left:20%;
@@ -257,12 +258,13 @@
 }
 .pannerList li{
     width: 13%;
-    height: auto;
+    height: 105px;
     float: left;
+    margin-top: 10px;
 }
 .pannerList li img{
     width: 100%;
-    display: block;
+   height: 100%;
 }
 .pannerList li:nth-of-type(2){
     margin-left:4.4%;

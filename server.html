@@ -37,9 +37,20 @@
                 <p>销</p>
                 <p>顾</p>
                 <p>问</p>   
-                <div class="sidebox box2">
-                    <img src="img/侧边栏 拷贝.png" alt="">
-                </div>                                          
+                  <div class="sidebox box2" >
+                     <div class="box2-title"><i>请选择您需要咨询的业务</i></div>
+                    <ul id='boxCode'>
+                        <!--<li>
+                            <p><i>asdasd</i></p>
+                            <p><i>asdasd</i></p> 
+                            <div class="codeimg"></div> 
+                            <div class="codetell">
+                               <div class="codetellicon"></div>
+                               <i></i>    
+                            </div>                          
+                        </li>-->
+                    </ul>
+                </div>                                      
             </div>            
         </div>
         <div id='scrollTop' class="scrollTop"></div>
@@ -69,7 +80,7 @@
             </div>
         </nav>
         <div class="case-nav">
-            <div class="navlogo"></div>
+            <div class="navlogo navlogo-server"></div>
             
         </div>
         <div class="banner-img">
@@ -93,7 +104,7 @@
    
     <div class="server">
         <ul class="serverList">
-           <li>
+           <!--<li>
                <div class="serverList-img">
                </div>
                <p>内容营销</p>
@@ -138,7 +149,7 @@
                <div class="serverList-img">
                </div>
                <p>内容营销</p>
-           </li>
+           </li>-->
         </ul>
     </div>
     <div class="homefooter">
@@ -157,11 +168,12 @@
                 <div class="homefooter-low2">
                     <p>友情链接 F  <a>RIENDSHIP LINK</a></P>
                      <ul class="footeremp">
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>
-                         <li>东朔平方</li>                         
+                         <li><a href="http://www.shdsjt.cn">东朔集团</a></li>
+                         <li><a href="http://m2.shdsjt.cn">东朔平方</a></li>
+                         <li><a href="">东朔企服</a></li>
+                         <li><a href="">东朔易淼</a></li>
+                         <li><a href="">东朔金融</a></li>
+                         <li><a href="">东朔法务</a></li>                             
                      </ul>
                 </div>   
             </div>    
@@ -176,6 +188,7 @@
 <script src="js/scroll.js"></script>  
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 <script src="js/swiper-3.4.2.min.js"></script>  
+<script src='js/api.js'></script>
  <script>
 
     var appendNumber = 10;
@@ -193,4 +206,46 @@
         crossFade: false,
         }
     });
+    //服务项列表
+     $.ajax({
+        url: api+ServiceList,
+        type: 'get',
+        data:{pageSize:100},
+        success: function(data){
+        console.log(data)
+        var ServiceList = data.Data.ServiceList;
+        $.each(ServiceList,function(index){
+            var html = 
+            '<li>'+
+               '<div class="serverList-img" style="background:url('+ServiceList[index].ServiceIcon+');background-position:center center;background-size:100% 100%;">'+
+               '</div>'+
+               '<p>'+ServiceList[index].ServiceInfo+'</p>'+
+           '</li>'
+           $('.serverList').append(html)
+        })
+        }               
+     })  
+     //营销顾问列表-首页-右侧展开二维码
+     $.ajax({
+        url: api+ConsultantList,
+        type: 'get',
+        success: function(data){
+           console.log(data)
+           var codeList = data.Data.ConsultantList
+           $.each(codeList,function(index){
+               console.log(codeList[index].ConsultantType)
+               var html = 
+                '<li>'+
+                    '<p><i>'+codeList[index].ConsultantType+'</i></p>'+
+                    '<p><i>'+codeList[index].ConsultantName+'</i></p>'+
+                    '<div class="codeimg"><img src="'+codeList[index].Pic+'"></div>'+ 
+                    '<div class="codetell">'+
+                        '<div class="codetellicon"></div>'+
+                         codeList[index].ConsultantPhone+   
+                    '</div>'+                          
+                '</li>'
+                $('#boxCode').append(html)
+           })
+        }
+    })
  </script>
