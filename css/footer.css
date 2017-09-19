@@ -18,11 +18,16 @@
     overflow: hidden;
     padding-top:80px;
 }
-.homefooter-low1 , .homefooter-low2,.homefooter-low3{
-    width: 33.33333%;
+.homefooter-low1{
+    width: 30%;
     height: 300px;
     float: left;
 }
+ .homefooter-low2{
+    width: 35%;
+    height: 300px;
+    float: left;
+ }
 .homefooter-low1 p{
     color:white;
     font-size: 16px;
