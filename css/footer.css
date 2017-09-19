@@ -1,3 +1,6 @@
+.footer2 a{
+    text-decoration: none;
+}
 .homefooter{
     width: 100%;
     height: auto;
@@ -16,7 +19,7 @@
     padding-top:80px;
 }
 .homefooter-low1 , .homefooter-low2,.homefooter-low3{
-    width: 33.33%;
+    width: 33.33333%;
     height: 300px;
     float: left;
 }
@@ -36,7 +39,7 @@
 }
 .homefooter-low2 p{
     color: white;
-    font-size: 16px;
+    font-size: 18px;
 }
 .homefooter-low2 p a{
     font-size: 10px;
@@ -44,15 +47,16 @@
     text-decoration: none;
 }
 .homefooter-low2 .footertell{
-    width: 40%;
+    width: 50%;
     float: left;
     height: 20px;
     color: white;
-    font-size: 10px;
+    font-size: 14px;
     margin-top:30px;
     line-height: 20px;
     text-indent: 10px;
 }
+
 .footertell div {
     float: left;
     width: 25px;
@@ -75,11 +79,10 @@
      width: 100%;
     height: 30px;
     color: white;
-    font-size: 10px;
+    font-size: 14px;
     margin-top:70px;
     line-height: 30px;
     text-indent: 10px;
-    letter-spacing: 1.5px;
 }
 .road div{
     float: left;
@@ -101,7 +104,7 @@
     height: 20px;
     float: left;
     color: white;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 20px;
 }
 .footeremp li:nth-of-type(4){

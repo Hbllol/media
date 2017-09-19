@@ -28,7 +28,7 @@
         width: 50%;
         margin-top: 30px;
     }
-    .serverList li:nth-of-type(2), .serverList li:nth-of-type(3), .serverList li:nth-of-type(4), .serverList li:nth-of-type(5), .serverList li:nth-of-type(7), .serverList li:nth-of-type(8), .serverList li:nth-of-type(9), .serverList li:nth-of-type(10){
+    .serverList li:nth-of-type(n){
     margin-left:0%; 
 }
 .blue-logo {

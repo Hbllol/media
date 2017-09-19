@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Keywords" content="东朔传媒/内容营销/公关活动/演艺经纪18221220100/网站设计/新闻发布会/定制H5制作/微信代运营/商业摄影/媒介购买/数字化营销方案13661427674/咨询热线：4001899996">
+    <meta name="description" content="东朔传媒/内容营销/公关活动/演艺经纪18221220100/网站设计/新闻发布会/定制H5制作/微信代运营/商业摄影/媒介购买/数字化营销方案13661427674/咨询热线：4001899996">    
+    <title>上海东朔传媒—理解客户的生意，做好我们的创意</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="" href="css/index.css">
-    <link rel="stylesheet" type="" href="css/broadside.css">  
-    <link rel="stylesheet" type="" href="css/footer.css">
-    <link rel="stylesheet" type="" href="css/swiper-3.4.2.min.css">                  
-    <link rel="stylesheet" type="" href="css/case.css">      
-    <link rel="stylesheet" type="" href="css/media.css">   
-    <link rel="stylesheet" type="" href="css/media2.css">   
-    <link rel="stylesheet" type="" href="css/media3.css">                       
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/broadside.css">  
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">                  
+    <link rel="stylesheet" type="text/css" href="css/case.css">      
+    <link rel="stylesheet" type="text/css" href="css/media.css">   
+    <link rel="stylesheet" type="text/css" href="css/media2.css">   
+    <link rel="stylesheet" type="text/css" href="css/media3.css">                       
 </head>
 <style>
     #swiper-wap img{
@@ -196,11 +198,12 @@
                     <div class=' road'><div></div> 上海市闵行区莘松路288号东朔商务中心4楼</div>                    
                 </div>
                 <div class="homefooter-low2">
-                    <p>友情链接 F  <a>RIENDSHIP LINK</a></P>
+                    <p>友情链接 <a>FRIENDSHIP LINK</a></p>
+
                      <ul class="footeremp">
                         <li><a href="http://www.shdsjt.cn">东朔集团</a></li>
                          <li><a href="http://m2.shdsjt.cn">东朔平方</a></li>
-                         <li><a href="">东朔企服</a></li>
+                         <li><a href="http://www.shdsqf.com">东朔企服</a></li>
                          <li><a href="">东朔易淼</a></li>
                          <li><a href="">东朔金融</a></li>
                          <li><a href="">东朔法务</a></li>                                      
@@ -209,7 +212,7 @@
             </div>    
         </div>
         <div class="footer2">
-            <a style="color: #929398;" href='http://www.miitbeian.gov.cn/'>上海东朔实业集团有限公司版权所有Copyright©2016-2017&nbsp;&nbsp;ICP备案证书号 ： 泸ICP备17039610</a>
+            <a style="color: #929398;" href='http://www.miitbeian.gov.cn/'>上海东朔实业集团有限公司版权所有Copyright©2016-2017&nbsp;&nbsp;ICP备案证书号 ： 沪ICP备17039610号</a>
         </div> 
     </div>
 </body>
@@ -278,14 +281,40 @@
                    '<img src="'+PicList[index]+'" alt="">'+ 
                 '</div>'
                 $('#caselist-pc').append(html)
+                var swiper = new Swiper('.swiper-container', {
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    pagination : '.swiper-pagination',
+                    paginationClickable:true,
+                    slidesPerView:1,
+                    centeredSlides: false,
+                    paginationClickable: true,
+                    spaceBetween: 30,
+                });
                 var html2 = 
                  '<div class="swiper-slide">'+
                     '<img src="'+PicList[index]+'" alt="">'+  
                  '</div>'
                  $('#swiper-wap').append(html2)
+                  var swiper2 = new Swiper('.swiper-container2', {
+                    paginationClickable:true,
+                    slidesPerView:1,
+                    centeredSlides: false,
+                    paginationClickable: true,
+                    parallax : true,
+                    speed:3000,
+                    autoplay:5000,
+                    effect : 'fade',
+                    fade: {
+                    crossFade: false,
+                    }
+                });
             })
             $('.listContent-right').html(data.Data.galleryDetail)
             $('.content-wap span').html(data.Data.galleryDetail)
+            if(data.Data.galleryDetail.length<150){
+               $('.showDur').hide()
+            }
             }               
         })  
     }

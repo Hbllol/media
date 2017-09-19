@@ -1,12 +1,11 @@
 .case-nav .navlogo{
   width: 220px;
     height: 70px;
-    background: url('../img/关于_03.png');
+    background: url('../img/ic3.png');
     background-position:center  center;
     background-size:100% 100%;   
     float: left;
     margin-top:-50px;
-    opacity: 0.5;
 }
 .aboutdur{
     width: 70%;
@@ -116,7 +115,7 @@
    width: 90%;
    margin: 0 auto;
    height: auto;
-   font-size: 10px;
+   font-size: 14px;
    margin-top: 20px;
    
 }
@@ -130,7 +129,7 @@
 .aboutimgs1{
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .aboutimgs1 img{
     width: 100%;
@@ -151,4 +150,39 @@
 }
 .aboutimgs2{
     display: none;
+}
+.aboutimgs1 ul{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.aboutimgs1 ul li{
+    float: left;
+    width: 50%;
+    height: auto;
+}
+.aboutimgs1 ul li img{
+    width: 100%;
+    display: block;
+}
+.aboutimgs1 ul li:nth-of-type(2){
+    height: 291px;
+    background: #60D2F4;
+    padding: 100px;
+    color: white;
+}
+.aboutimgs1 ul li:nth-of-type(3){
+    height: 291px;
+    background: #60D2F4;
+    padding: 100px;
+    padding-left: 23%;
+    color: white;
+}
+.aboutimgs1 ul li .p1{
+    font-size: 34px;
+    margin: 0;
+}
+.aboutimgs1 ul li .p2{
+    font-size: 15px;
+    margin: 0;    
 }

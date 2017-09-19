@@ -21,14 +21,14 @@
 .case-nav .navlogo{
     width: 220px;
     height: 70px;
-    background: url('../img/Gallery-拷贝.png');
+    background: url('../img/ic1.png');
     background-position:center  center;
     background-size:100% 100%;   
     float: left;
     margin-top:-50px;
 }
 .case-nav .navlogo-server{
-    background: url('../img/服务.png');
+    background: url('../img/ic2.png');
     background-position:center  center;
     background-size:100% 100%;   
     float: left;
@@ -95,7 +95,7 @@
     overflow: hidden;
 }
 .serverList li{
-    width: 12%;
+    width: 16%;
     height: auto;
     float: left;
     margin-top:150px;
@@ -110,11 +110,11 @@
 }
 .serverList li p{
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 20px;
 }
-.serverList li:nth-of-type(2), .serverList li:nth-of-type(3), .serverList li:nth-of-type(4), .serverList li:nth-of-type(5), .serverList li:nth-of-type(7), .serverList li:nth-of-type(8), .serverList li:nth-of-type(9), .serverList li:nth-of-type(10), .serverList li:nth-of-type(12), .serverList li:nth-of-type(13), .serverList li:nth-of-type(14), .serverList li:nth-of-type(15){
+.serverList li:nth-of-type(2), .serverList li:nth-of-type(3), .serverList li:nth-of-type(4), .serverList li:nth-of-type(6), .serverList li:nth-of-type(7), .serverList li:nth-of-type(8), .serverList li:nth-of-type(10), .serverList li:nth-of-type(11), .serverList li:nth-of-type(12), .serverList li:nth-of-type(14), .serverList li:nth-of-type(15), .serverList li:nth-of-type(16){
     margin-left:10%; 
 }
 .case-nav .serverlogo{
@@ -203,33 +203,15 @@
     background: white;
     opacity: 1;
 }
+.listContent-right p{margin: 0;}
 .listContent-right{
-    width: 30%;
+    width: 35%;
     height: auto;
     float: left;
-    padding: 20px;
+    padding:0 20px;
 }
-.listContent-right strong{
-    font-size: 20px;
-    padding: 20px 0;
-}
-.listContent-right p:nth-of-type(1){
-    color: #393939;
-    font-size: 22px;
-    font-weight: bold;
-    padding-bottom:10px;   
-}
-.listContent-right span{
-    color: #7C7C7C;
-    font-size: 14px;
-}
-.listContent-right p:nth-of-type(2){
-    font-size: 18px;
-     color: #393939;
-      font-weight: bold;
-    padding-bottom:10px;   
-    margin-top: 30px; 
-}
+
+
 .caseListContent .caseList{
     margin-top: 30px;
     margin-bottom: 20px;
@@ -304,6 +286,9 @@
 }
 #wapteam{
     display: none;
+}
+#listNav li{
+    color: #6A6D73;
 }
 #listNav li:hover{
     color: #393939;

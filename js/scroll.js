@@ -23,3 +23,5 @@
     })
     $('.scrollTop').css('bottom','50px')
     $('.banner-img').css('height',$('.banner-bag').height()+50)
+    
+    console.log($('.swiper-container').height())
